@@ -1,0 +1,25 @@
+<div class="mt-4">
+    <h2 class="text-center">View Teachers</h2>
+    <div class="container">
+        <!--Add Teacher Button-->
+        <div class="mb-3">
+            <a href="/create-teacher"><button type="button" class="btn btn-primary"><b>Add Teacher</b></button></a>
+        </div>
+        <!--List Teacher Table-->
+        <table class="table table-striped table-bordered table-hover">
+            <caption>List of teachers</caption>
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let teacher of teachers">
+                    <td>{{teacher.id}}</td>
+                    <td>{{teacher.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
